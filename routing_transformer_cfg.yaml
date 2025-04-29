@@ -1,0 +1,33 @@
+RoutingConfig:
+    image_size: 224
+    patch_size: 7
+    n_layers: 12
+    embedd_dim: 512
+    n_heads: 8
+    factor: 4
+    channels: 3
+    top_p: 0.95
+    bias: False
+    classes: 2
+
+OptimizerConfig:
+    learning_rate: 3e-4
+    weight_decay: 0.1
+    betas: [0.9,0.999]
+    
+TrainerConfig:
+    max_epochs: 224
+    batch_size: 32
+    data_loader_workers: 2
+    grad_norm_clip: 1.0
+    save_every: 10
+    use_amp: True
+    snapshot_path: "routing_snapshot.pt"
+    warmup: 20
+    max_lr: 2e-2
+    min_lr: 4e-3
+
+hydra:
+
+  run:
+    dir: ./

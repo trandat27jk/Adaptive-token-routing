@@ -1,0 +1,5 @@
+hydra-core
+einops
+datasets
+kagglehub
+wandb
