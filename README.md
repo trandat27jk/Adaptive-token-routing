@@ -124,12 +124,7 @@ Add your validated results here after running controlled experiments.
 | ART          |       Brain Tumor MRI |      99.16 | 2.1     |
 | Baseline ViT |          Same setting |      85.85 | 88.2 |
 
-Example qualitative result table:
 
-| Input Image                                  | ART Attention / Routing Map                      | Prediction |
-| -------------------------------------------- | ------------------------------------------------ | ---------- |
-| `<img src="assets/input_1.png" width="220">` | `<img src="assets/attention_1.png" width="220">` | Pneumonia  |
-| `<img src="assets/input_2.png" width="220">` | `<img src="assets/attention_2.png" width="220">` | Normal     |
 
 > For a fair comparison, results should be reported using the same train/test split, preprocessing pipeline, metric definition, and hardware setting.
 
